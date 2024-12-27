@@ -1,41 +1,69 @@
-# Compiled Lua sources
-luac.out
+-- LocalScript en StarterPlayerScripts
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+local player = game.Players.LocalPlayer -- Obtenemos al jugador local
+local character = player.Character or player.CharacterAdded:Wait() -- Aseguramos obtener el personaje
+local position = character:WaitForChild("HumanoidRootPart").Position -- Posición central del personaje
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+-- Creamos el bloque
+local block = Instance.new("Part") -- Nuevo objeto tipo Part
+block.Size = Vector3.new(4, 4, 4) -- Dimensiones del bloque 4x4x4
+block.Position = position + Vector3.new(0, 5, 0) -- Posicionamos el bloque ligeramente por encima del jugador
+block.Anchored = true -- Anclamos el bloque para que no caiga
+block.BrickColor = BrickColor.new("Bright yellow") -- Color del bloque
+block.Parent = workspace -- Lo agregamos al mundo
 
-# Precompiled Headers
-*.gch
-*.pch
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(4, 5, 0)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(8, 5, 0)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(0, 5, 4)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(4, 5, 4)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
 
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(8, 5, 4)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
+
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(0, 5, 8)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
+
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(4, 5, 8)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
+
+local block = Instance.new("Part")
+block.Size = Vector3.new(4, 4, 4)
+block.Position = position + Vector3.new(8, 5, 8)
+block.Anchored = true
+block.BrickColor = BrickColor.new("Bright yellow")
+block.Parent = workspace
